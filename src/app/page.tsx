@@ -27,6 +27,7 @@ const RESULT_DELAY_MS = 900;
 const FUEL_WARN = 20;
 
 const DIFFICULTIES: { key: Difficulty; label: string }[] = [
+  { key: "beginner", label: "超エントリー" },
   { key: "easy", label: "EASY" },
   { key: "normal", label: "NORMAL" },
   { key: "hard", label: "HARD" },
@@ -69,7 +70,7 @@ export default function Home() {
         return;
       }
       if (phase === "title") {
-        const idx = ["Digit1", "Digit2", "Digit3"].indexOf(e.code);
+        const idx = ["Digit1", "Digit2", "Digit3", "Digit4"].indexOf(e.code);
         if (idx >= 0) setDifficulty(DIFFICULTIES[idx].key);
       }
     };

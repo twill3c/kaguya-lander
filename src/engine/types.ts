@@ -12,7 +12,7 @@ export const THRUST_ACCEL = 4.5;
 export const ROTATE_SPEED = 90;
 export const FUEL_BURN = 10;
 
-export type Difficulty = "easy" | "normal" | "hard";
+export type Difficulty = "beginner" | "easy" | "normal" | "hard";
 export type LanderStatus = "flying" | "landed" | "crashed";
 
 export interface LanderState {
