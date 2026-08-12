@@ -1,0 +1,10 @@
+{"v": "1.2", "ts": "2026-08-12T11:03:44+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "loop_start", "data": {"goal": "REQ-003 判定: 地形衝突・着陸成否・スコア計算を実装しT3-1〜T3-7を緑にする", "spec_refs": ["REQ-003"], "scaffold_version": "unversioned", "agent": "claude-code", "model": "claude-fable-5"}}
+{"v": "1.2", "ts": "2026-08-12T11:03:45+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 1, "stage_name": "Read", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T11:03:45+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 2, "stage_name": "Plan", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T11:03:55+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "test_run", "data": {"command": "npm test", "passed": 12, "failed": 7}}
+{"v": "1.2", "ts": "2026-08-12T11:03:55+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 3, "stage_name": "Red", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T11:04:46+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "test_run", "data": {"command": "npm test", "passed": 19, "failed": 0}}
+{"v": "1.2", "ts": "2026-08-12T11:04:46+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 4, "stage_name": "Green", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T11:04:46+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass", "notes": "lint クリーン"}}
+{"v": "1.2", "ts": "2026-08-12T11:04:46+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T11:04:47+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "commit", "data": {"sha": "174f287", "kind": "feat", "files_changed": 3}}

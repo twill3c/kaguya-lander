@@ -8,3 +8,5 @@
 {"v": "1.2", "ts": "2026-08-12T11:01:11+09:00", "project": "kaguya-lander", "loop_id": "loop_002", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass", "notes": "lint クリーン"}}
 {"v": "1.2", "ts": "2026-08-12T11:01:35+09:00", "project": "kaguya-lander", "loop_id": "loop_002", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
 {"v": "1.2", "ts": "2026-08-12T11:01:36+09:00", "project": "kaguya-lander", "loop_id": "loop_002", "event": "commit", "data": {"sha": "cd66f81", "kind": "feat", "files_changed": 4}}
+{"v": "1.2", "ts": "2026-08-12T11:03:07+09:00", "project": "kaguya-lander", "loop_id": "loop_002", "event": "stage_end", "data": {"stage": 7, "stage_name": "Ship", "result": "pass", "notes": "PR #2 CI 緑・マージ済み"}}
+{"v": "1.2", "ts": "2026-08-12T11:03:07+09:00", "project": "kaguya-lander", "loop_id": "loop_002", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "REQ-002 地形生成完了。T2-1〜T2-5 を Red 1 回で緑化、1500 ケース掃引クリーン、PR #2 マージ"}}
