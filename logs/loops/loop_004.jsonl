@@ -6,3 +6,4 @@
 {"v": "1.2", "ts": "2026-08-12T11:18:29+09:00", "project": "kaguya-lander", "loop_id": "loop_004", "event": "stage_end", "data": {"stage": 4, "stage_name": "Green", "result": "pass", "notes": "lint/test/build 緑。headless Edge のスクリーンショット 3 枚で描画とアニメーションを確認"}}
 {"v": "1.2", "ts": "2026-08-12T11:18:29+09:00", "project": "kaguya-lander", "loop_id": "loop_004", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass", "notes": "lint クリーン"}}
 {"v": "1.2", "ts": "2026-08-12T11:18:29+09:00", "project": "kaguya-lander", "loop_id": "loop_004", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T11:18:30+09:00", "project": "kaguya-lander", "loop_id": "loop_004", "event": "commit", "data": {"sha": "790cf84", "kind": "feat"}}
