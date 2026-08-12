@@ -1,0 +1,8 @@
+{"v": "1.2", "ts": "2026-08-12T16:36:15+09:00", "project": "kaguya-lander", "loop_id": "loop_011", "event": "loop_start", "data": {"goal": "REQ-010 スマホ対応強化: 可視タッチ操作バーとモバイル体裁", "spec_refs": ["REQ-010"], "scaffold_version": "unversioned", "agent": "claude-code", "model": "claude-fable-5"}}
+{"v": "1.2", "ts": "2026-08-12T16:36:16+09:00", "project": "kaguya-lander", "loop_id": "loop_011", "event": "stage_end", "data": {"stage": 1, "stage_name": "Read", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T16:36:16+09:00", "project": "kaguya-lander", "loop_id": "loop_011", "event": "stage_end", "data": {"stage": 2, "stage_name": "Plan", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T16:36:16+09:00", "project": "kaguya-lander", "loop_id": "loop_011", "event": "stage_end", "data": {"stage": 3, "stage_name": "Red", "result": "skip", "notes": "UI/入力層のみ。ユニットテスト対象外、モバイルエミュレーションで目視検証"}}
+{"v": "1.2", "ts": "2026-08-12T16:41:02+09:00", "project": "kaguya-lander", "loop_id": "loop_011", "event": "test_run", "data": {"command": "npm test", "passed": 20, "failed": 0}}
+{"v": "1.2", "ts": "2026-08-12T16:41:02+09:00", "project": "kaguya-lander", "loop_id": "loop_011", "event": "stage_end", "data": {"stage": 4, "stage_name": "Green", "result": "pass", "notes": "iPhone 13 エミュレーションで操作バー表示・推力/回転の押下保持・燃料減少を確認。pageerror なし"}}
+{"v": "1.2", "ts": "2026-08-12T16:41:03+09:00", "project": "kaguya-lander", "loop_id": "loop_011", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass", "notes": "lint クリーン"}}
+{"v": "1.2", "ts": "2026-08-12T16:41:03+09:00", "project": "kaguya-lander", "loop_id": "loop_011", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}

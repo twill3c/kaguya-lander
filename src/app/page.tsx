@@ -42,6 +42,7 @@ export default function Home() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const inputRef = useRef<InputSource | null>(null);
   const hudRef = useRef<HTMLDivElement>(null);
+  const barRef = useRef<HTMLDivElement>(null);
   const [phase, setPhase] = useState<Phase>("title");
   const [difficulty, setDifficulty] = useState<Difficulty>("normal");
   const [round, setRound] = useState(0);
@@ -82,7 +83,7 @@ export default function Home() {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (onTitle || !canvas) return;
-    const source = createInputSource(canvas);
+    const source = createInputSource(canvas, barRef.current);
     inputRef.current = source;
     return () => {
       source.dispose();
@@ -125,13 +126,8 @@ export default function Home() {
   });
 
   return (
-    <main
-      style={{
-        position: "relative",
-        width: "min(100%, 800px)",
-        aspectRatio: "4 / 3",
-      }}
-    >
+    <main className="game-shell">
+      <div className="stage">
       {phase !== "title" && (
         <>
           <canvas
@@ -195,7 +191,7 @@ export default function Home() {
           <p className="screen-controls">
             ↑ / SPACE — 推力 ← → — 回転
             <br />
-            タッチ: 画面下部 左 = 左回転 / 中央 = 推力 / 右 = 右回転
+            タッチ: 画面下のボタン ◀ 左回転 / ▲ 推力 / ▶ 右回転
           </p>
           <p className="screen-controls difficulty">
             {DIFFICULTIES.map((d, i) => (
@@ -237,6 +233,22 @@ export default function Home() {
             <p className="screen-verdict crashed">墜落</p>
           )}
           <p className="press">PRESS ENTER / TAP</p>
+        </div>
+      )}
+      </div>
+
+      {/* 可視タッチ操作バー(REQ-010)。pointer: coarse の端末でのみ表示 */}
+      {phase !== "title" && (
+        <div className="controls-bar" ref={barRef} aria-hidden="true">
+          <button type="button" tabIndex={-1} data-control="left">
+            ◀
+          </button>
+          <button type="button" tabIndex={-1} data-control="thrust">
+            ▲ 推力
+          </button>
+          <button type="button" tabIndex={-1} data-control="right">
+            ▶
+          </button>
         </div>
       )}
     </main>
