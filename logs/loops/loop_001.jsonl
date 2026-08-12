@@ -1,0 +1,10 @@
+{"v": "1.2", "ts": "2026-08-12T10:54:50+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "loop_start", "data": {"goal": "REQ-001 物理エンジン: 固定タイムステップ積分・重力・推力・回転・燃料消費を実装しT1-1〜T1-7を緑にする", "spec_refs": ["REQ-001"], "scaffold_version": "unversioned", "agent": "claude-code", "model": "claude-fable-5"}}
+{"v": "1.2", "ts": "2026-08-12T10:54:51+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 1, "stage_name": "Read", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T10:54:51+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 2, "stage_name": "Plan", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T10:55:10+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "test_run", "data": {"command": "npm test", "passed": 12, "failed": 7}}
+{"v": "1.2", "ts": "2026-08-12T10:55:11+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 3, "stage_name": "Red", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T10:55:55+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "test_run", "data": {"command": "npm test", "passed": 19, "failed": 0}}
+{"v": "1.2", "ts": "2026-08-12T10:55:56+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 4, "stage_name": "Green", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T10:55:56+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass", "notes": "実装が最小構成のため追加整理なし。lint クリーン"}}
+{"v": "1.2", "ts": "2026-08-12T10:55:56+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T10:55:57+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "commit", "data": {"sha": "84c0c16", "kind": "feat", "files_changed": 4}}
