@@ -8,3 +8,5 @@
 {"v": "1.2", "ts": "2026-08-12T10:55:56+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass", "notes": "実装が最小構成のため追加整理なし。lint クリーン"}}
 {"v": "1.2", "ts": "2026-08-12T10:55:56+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
 {"v": "1.2", "ts": "2026-08-12T10:55:57+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "commit", "data": {"sha": "84c0c16", "kind": "feat", "files_changed": 4}}
+{"v": "1.2", "ts": "2026-08-12T10:58:14+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 7, "stage_name": "Ship", "result": "pass", "notes": "PR #1 CI 緑・マージ済み"}}
+{"v": "1.2", "ts": "2026-08-12T10:58:15+09:00", "project": "kaguya-lander", "loop_id": "loop_001", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "REQ-001 物理エンジン完了。T1-1〜T1-7 を Red 1 回で緑化、PR #1 マージ"}}
