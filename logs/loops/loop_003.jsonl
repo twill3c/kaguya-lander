@@ -8,3 +8,5 @@
 {"v": "1.2", "ts": "2026-08-12T11:04:46+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass", "notes": "lint クリーン"}}
 {"v": "1.2", "ts": "2026-08-12T11:04:46+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
 {"v": "1.2", "ts": "2026-08-12T11:04:47+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "commit", "data": {"sha": "174f287", "kind": "feat", "files_changed": 3}}
+{"v": "1.2", "ts": "2026-08-12T11:06:27+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 7, "stage_name": "Ship", "result": "pass", "notes": "PR #3 CI 緑・マージ済み"}}
+{"v": "1.2", "ts": "2026-08-12T11:06:27+09:00", "project": "kaguya-lander", "loop_id": "loop_003", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "REQ-003 判定・スコア完了。T3-1〜T3-7 を Red 1 回で緑化、PR #3 マージ。engine 3 モジュール完成"}}
