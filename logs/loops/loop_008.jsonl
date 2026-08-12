@@ -7,3 +7,5 @@
 {"v": "1.2", "ts": "2026-08-12T12:15:07+09:00", "project": "kaguya-lander", "loop_id": "loop_008", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "skip", "notes": "1 行のラベル変更のみ"}}
 {"v": "1.2", "ts": "2026-08-12T12:15:08+09:00", "project": "kaguya-lander", "loop_id": "loop_008", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
 {"v": "1.2", "ts": "2026-08-12T12:15:08+09:00", "project": "kaguya-lander", "loop_id": "loop_008", "event": "commit", "data": {"sha": "ad4a091", "kind": "fix"}}
+{"v": "1.2", "ts": "2026-08-12T12:17:32+09:00", "project": "kaguya-lander", "loop_id": "loop_008", "event": "stage_end", "data": {"stage": 7, "stage_name": "Ship", "result": "pass", "notes": "PR #8 CI 緑・マージ。本番でラベル BEGINNER を確認"}}
+{"v": "1.2", "ts": "2026-08-12T12:17:33+09:00", "project": "kaguya-lander", "loop_id": "loop_008", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "難易度ラベルを BEGINNER に変更、本番反映確認"}}
