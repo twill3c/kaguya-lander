@@ -6,3 +6,4 @@
 {"v": "1.2", "ts": "2026-08-12T16:41:02+09:00", "project": "kaguya-lander", "loop_id": "loop_011", "event": "stage_end", "data": {"stage": 4, "stage_name": "Green", "result": "pass", "notes": "iPhone 13 エミュレーションで操作バー表示・推力/回転の押下保持・燃料減少を確認。pageerror なし"}}
 {"v": "1.2", "ts": "2026-08-12T16:41:03+09:00", "project": "kaguya-lander", "loop_id": "loop_011", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass", "notes": "lint クリーン"}}
 {"v": "1.2", "ts": "2026-08-12T16:41:03+09:00", "project": "kaguya-lander", "loop_id": "loop_011", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T16:41:03+09:00", "project": "kaguya-lander", "loop_id": "loop_011", "event": "commit", "data": {"sha": "4083168", "kind": "feat"}}
