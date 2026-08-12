@@ -50,7 +50,23 @@ export interface JudgeResult {
   padMultiplier?: number;
 }
 
-/** SPEC §1 の初期状態を返す */
-export function initialState(): LanderState {
-  return { x: 200, y: 30, vx: 8, vy: 0, angle: 0, fuel: 100, status: "flying" };
+/** 難易度別の初期燃料(SPEC §1、REQ-008) */
+export const START_FUEL: Record<Difficulty, number> = {
+  beginner: 150,
+  easy: 100,
+  normal: 100,
+  hard: 100,
+};
+
+/** SPEC §1 の初期状態を返す。初期燃料は難易度依存(省略時 normal) */
+export function initialState(difficulty: Difficulty = "normal"): LanderState {
+  return {
+    x: 200,
+    y: 30,
+    vx: 8,
+    vy: 0,
+    angle: 0,
+    fuel: START_FUEL[difficulty],
+    status: "flying",
+  };
 }

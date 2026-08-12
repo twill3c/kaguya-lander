@@ -7,6 +7,7 @@
 
 - 座標系: x 右向き正、y **下向き正**(Canvas に一致)。単位はメートル(m)、角度は度(deg)
 - ワールド幅 `WORLD_W = 400` m、高さ `WORLD_H = 300` m。開始位置 x=200, y=30、初速 vx=+8, vy=0
+- 初期燃料は難易度依存: beginner = 150、easy/normal/hard = 100(REQ-008)
 - 固定タイムステップ `DT = 1/60` 秒。描画側は rAF + アキュムレータで DT を厳守する(可変 dt 積分は禁止)
 - 積分は半陰的オイラー(velocity → position の順)
 
@@ -17,7 +18,7 @@
 | x, y | 位置 (m) |
 | vx, vy | 速度 (m/s) |
 | angle | 機体角度 (deg)。0 = 直立、正 = 時計回り |
-| fuel | 残燃料 (0–100) |
+| fuel | 残燃料 (0–初期値。初期値は §1 のとおり難易度依存) |
 | status | 'flying' \| 'landed' \| 'crashed' |
 
 入力 `ControlInput`: `thrust: boolean`, `rotate: -1 | 0 | 1`

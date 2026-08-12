@@ -93,6 +93,7 @@ export default function Home() {
   useGameLoop({
     canvasRef,
     terrain,
+    difficulty,
     resetKey: `${round}:${onTitle}`,
     getInput: () => inputRef.current?.getInput() ?? IDLE,
     onSettled: (status, state, padMultiplier) => {
