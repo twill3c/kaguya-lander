@@ -15,6 +15,55 @@ body {
   min-height: 100dvh;
   display: grid;
   place-items: center;
+  /* モバイルのプル更新・スクロール連鎖を防ぐ(REQ-010) */
+  overscroll-behavior: none;
+}
+
+/* ---- レイアウト(ステージ + 操作バー) ---- */
+
+.game-shell {
+  width: min(100%, 800px);
+  padding: 8px;
+}
+
+.stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+/* ---- 可視タッチ操作バー(SPEC §7、REQ-010) ---- */
+
+.controls-bar {
+  display: none;
+  grid-template-columns: 1fr 1.6fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+  touch-action: none;
+}
+
+@media (pointer: coarse) {
+  .controls-bar { display: grid; }
+}
+
+.controls-bar button {
+  font: inherit;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  height: 64px;
+  background: none;
+  border: 1px solid var(--line-dim);
+  border-radius: 8px;
+  color: var(--line-dim);
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.controls-bar button:active {
+  border-color: var(--line);
+  color: var(--line);
 }
 
 /* ---- 画面オーバーレイ(タイトル / リザルト) ---- */
