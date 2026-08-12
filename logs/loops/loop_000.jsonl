@@ -1,0 +1,2 @@
+{"v": "1.2", "ts": "2026-08-12T10:51:14+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "loop_start", "data": {"goal": "ハーネス初期化: git init・CI 疎通・GitHub 連携を完了する", "spec_refs": ["Loop-0"], "scaffold_version": "unversioned", "agent": "claude-code", "model": "claude-fable-5"}}
+{"v": "1.2", "ts": "2026-08-12T10:52:36+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "test_run", "data": {"command": "npm test", "passed": 19, "failed": 0}}

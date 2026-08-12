@@ -1,0 +1,18 @@
+:root {
+  --sky: #0b0e1a;
+  --line: #e8e6df;
+  --line-dim: #6b7080;
+  --accent: #c9a86a;
+  --danger: #c25450;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--sky);
+  color: var(--line);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+}
