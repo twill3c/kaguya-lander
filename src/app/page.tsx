@@ -27,7 +27,7 @@ const RESULT_DELAY_MS = 900;
 const FUEL_WARN = 20;
 
 const DIFFICULTIES: { key: Difficulty; label: string }[] = [
-  { key: "beginner", label: "超エントリー" },
+  { key: "beginner", label: "BEGINNER" },
   { key: "easy", label: "EASY" },
   { key: "normal", label: "NORMAL" },
   { key: "hard", label: "HARD" },
