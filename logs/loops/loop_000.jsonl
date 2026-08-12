@@ -1,2 +1,11 @@
 {"v": "1.2", "ts": "2026-08-12T10:51:14+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "loop_start", "data": {"goal": "ハーネス初期化: git init・CI 疎通・GitHub 連携を完了する", "spec_refs": ["Loop-0"], "scaffold_version": "unversioned", "agent": "claude-code", "model": "claude-fable-5"}}
 {"v": "1.2", "ts": "2026-08-12T10:52:36+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "test_run", "data": {"command": "npm test", "passed": 19, "failed": 0}}
+{"v": "1.2", "ts": "2026-08-12T10:53:58+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "commit", "data": {"sha": "352d8d0", "kind": "chore"}}
+{"v": "1.2", "ts": "2026-08-12T10:53:58+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "stage_end", "data": {"stage": 1, "stage_name": "Read", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T10:53:59+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "stage_end", "data": {"stage": 2, "stage_name": "Plan", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T10:53:59+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "stage_end", "data": {"stage": 3, "stage_name": "Red", "result": "skip"}}
+{"v": "1.2", "ts": "2026-08-12T10:53:59+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "stage_end", "data": {"stage": 4, "stage_name": "Green", "result": "skip"}}
+{"v": "1.2", "ts": "2026-08-12T10:53:59+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T10:54:00+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T10:54:00+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "stage_end", "data": {"stage": 7, "stage_name": "Ship", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T10:54:14+09:00", "project": "kaguya-lander", "loop_id": "loop_000", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "git init・npm 依存導入・lint/test/build 全緑・GitHub private repo 作成と push 完了"}}
