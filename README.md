@@ -3,6 +3,9 @@
 月面着陸ゲーム(Lunar Lander)。Next.js 15 / React 19 / TypeScript。
 ハーネス駆動・ループネイティブ開発の題材プロジェクト。
 
+- プレイ: https://kaguya-lander.vercel.app
+- ライセンス: [MIT](LICENSE)
+
 ## クイックスタート
 
 ```bash

@@ -12,3 +12,4 @@
 | loop-07 | REQ-007 | 2026-08-12 | 1 | 超エントリー難易度(beginner: 幅 56m ×3)追加で 4 段階化。SPEC/TEST_SPEC 先行改訂 → T2-4 拡張 Red → 緑。seed 掃引 2000 ケース仕様準拠 |
 | loop-08 | REQ-007 | 2026-08-12 | — | 難易度ラベルを「超エントリー」→ BEGINNER に変更(他ラベルと表記統一) |
 | loop-09 | REQ-008 | 2026-08-12 | 1 | beginner の初期燃料 150(1.5 倍)。SPEC §1/§2 先行改訂 → T9-1 Red → initialState(difficulty) 化 |
+| loop-10 | REQ-009 | 2026-08-12 | — | MIT ライセンス化。LICENSE・package.json・タイトルフッタ表示・README 追記。リポジトリを public 化 |

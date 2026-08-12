@@ -1,0 +1,9 @@
+{"v": "1.2", "ts": "2026-08-12T12:29:24+09:00", "project": "kaguya-lander", "loop_id": "loop_010", "event": "loop_start", "data": {"goal": "REQ-009 MIT ライセンス化: LICENSE 追加・画面表示・リポジトリ公開", "spec_refs": ["REQ-009"], "scaffold_version": "unversioned", "agent": "claude-code", "model": "claude-fable-5"}}
+{"v": "1.2", "ts": "2026-08-12T12:29:24+09:00", "project": "kaguya-lander", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 1, "stage_name": "Read", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T12:29:25+09:00", "project": "kaguya-lander", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 2, "stage_name": "Plan", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T12:29:25+09:00", "project": "kaguya-lander", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 3, "stage_name": "Red", "result": "skip", "notes": "ライセンス文書と UI 表示のみ。ユニットテスト対象外"}}
+{"v": "1.2", "ts": "2026-08-12T12:32:11+09:00", "project": "kaguya-lander", "loop_id": "loop_010", "event": "test_run", "data": {"command": "npm test", "passed": 20, "failed": 0}}
+{"v": "1.2", "ts": "2026-08-12T12:32:11+09:00", "project": "kaguya-lander", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 4, "stage_name": "Green", "result": "pass", "notes": "headless でフッタ表示・リンク href・クリック非干渉を確認"}}
+{"v": "1.2", "ts": "2026-08-12T12:32:12+09:00", "project": "kaguya-lander", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass", "notes": "lint クリーン"}}
+{"v": "1.2", "ts": "2026-08-12T12:32:12+09:00", "project": "kaguya-lander", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T12:32:13+09:00", "project": "kaguya-lander", "loop_id": "loop_010", "event": "commit", "data": {"sha": "161d633", "kind": "feat"}}
