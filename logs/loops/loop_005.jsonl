@@ -7,3 +7,5 @@
 {"v": "1.2", "ts": "2026-08-12T11:31:25+09:00", "project": "kaguya-lander", "loop_id": "loop_005", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass", "notes": "lint クリーン(依存配列の式を変数化)"}}
 {"v": "1.2", "ts": "2026-08-12T11:31:25+09:00", "project": "kaguya-lander", "loop_id": "loop_005", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
 {"v": "1.2", "ts": "2026-08-12T11:31:26+09:00", "project": "kaguya-lander", "loop_id": "loop_005", "event": "commit", "data": {"sha": "7c5b3f9", "kind": "feat"}}
+{"v": "1.2", "ts": "2026-08-12T11:35:13+09:00", "project": "kaguya-lander", "loop_id": "loop_005", "event": "stage_end", "data": {"stage": 7, "stage_name": "Ship", "result": "pass", "notes": "PR #5 CI・Vercel 緑、マージ。本番でタイトル表示と Enter 開始を確認"}}
+{"v": "1.2", "ts": "2026-08-12T11:35:13+09:00", "project": "kaguya-lander", "loop_id": "loop_005", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "REQ-005 完了。入力(キー+タッチ)と画面遷移一巡を実装、SPEC §7 にタップ開始を先行追記、本番確認済み"}}

@@ -8,3 +8,4 @@
 | loop-03 | REQ-003 | 2026-08-12 | 1 | 場外→接地(両脚±3m の線形補間)→閾値 4 条件の順で判定。calcScore は SPEC §6 の式そのまま。Red 1 回で緑化 |
 | loop-04 | REQ-004 | 2026-08-12 | — | renderer + useGameLoop(rAF + 固定 DT アキュムレータ)。ローカル headless Chromium で描画・動作を目視確認。ユニットテスト対象外 |
 | loop-05 | REQ-005 | 2026-08-12 | — | input.ts(キー + 下部 3 分割タッチ)と画面状態機械。SPEC §7 にタップ開始を先行追記。headless で遷移一巡・操作を目視確認 |
+| loop-06 | REQ-006 | 2026-08-12 | — | HUD(onFrame + ref 直更新)・難易度 1/2/3・パッド倍率 accent 表示・favicon。headless で難易度別パッド構成と HUD 数値を確認 |
