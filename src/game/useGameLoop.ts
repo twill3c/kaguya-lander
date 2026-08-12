@@ -25,6 +25,8 @@ interface GameLoopOptions {
     state: LanderState,
     padMultiplier?: number,
   ) => void;
+  /** 毎フレーム描画後に呼ばれる(HUD の ref 直更新用。React 再レンダを起こさないこと) */
+  onFrame?: (state: LanderState) => void;
   /** 変更するとループとゲーム状態がリセットされる */
   resetKey?: unknown;
 }
@@ -38,12 +40,15 @@ export function useGameLoop({
   terrain,
   getInput,
   onSettled,
+  onFrame,
   resetKey,
 }: GameLoopOptions): void {
   const getInputRef = useRef(getInput);
   getInputRef.current = getInput;
   const onSettledRef = useRef(onSettled);
   onSettledRef.current = onSettled;
+  const onFrameRef = useRef(onFrame);
+  onFrameRef.current = onFrame;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -81,6 +86,7 @@ export function useGameLoop({
 
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       render(ctx, state, terrain, input.thrust);
+      onFrameRef.current?.(state);
       rafId = requestAnimationFrame(frame);
     };
 

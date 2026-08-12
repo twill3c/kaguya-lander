@@ -7,8 +7,11 @@ const MAX_VX = 1.0;
 const MAX_ANGLE = 8;
 const LEG_HALF = 3; // 脚幅 6m の半分
 
-/** x における地形面 y(隣接点の線形補間)。x は [0, WORLD_W] 前提 */
-function surfaceYAt(terrain: Terrain, x: number): number {
+/**
+ * x における地形面 y(隣接点の線形補間)。x は [0, WORLD_W] 前提。
+ * HUD の高度(地形面までの距離、SPEC §7)計算にも使う。
+ */
+export function surfaceYAt(terrain: Terrain, x: number): number {
   const pts = terrain.points;
   for (let i = 1; i < pts.length; i++) {
     if (x <= pts[i].x) {

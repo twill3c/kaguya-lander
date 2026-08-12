@@ -98,3 +98,48 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .press { animation: none; }
 }
+
+/* ---- HUD(SPEC §7: タブラー数字で常時表示) ---- */
+
+.hud {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  font-size: 12px;
+  line-height: 1.9;
+  letter-spacing: 0.08em;
+  color: var(--line-dim);
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hud span {
+  display: inline-block;
+  min-width: 5ch;
+  text-align: right;
+  margin: 0 2px 0 6px;
+  color: var(--line);
+}
+
+.hud .danger,
+.hud .danger span { color: var(--danger); }
+
+/* パッド倍率(accent 使用箇所その 1) */
+.pad-label {
+  position: absolute;
+  transform: translate(-50%, -150%);
+  color: var(--accent);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* タイトルの難易度選択 */
+.difficulty span {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.difficulty span.sel { color: var(--line); }
