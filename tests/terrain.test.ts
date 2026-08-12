@@ -29,10 +29,13 @@ describe("Loop 2: terrain.generateTerrain", () => {
   });
 
   it("T2-4 パッド構成: 難易度ごとの本数・幅・倍率", () => {
-    const widths = (d: "easy" | "normal" | "hard") =>
+    const widths = (d: "beginner" | "easy" | "normal" | "hard") =>
       generateTerrain(3, d).pads
         .map((p) => ({ w: p.x1 - p.x0, m: p.multiplier }))
         .sort((a, b) => b.w - a.w);
+    expect(widths("beginner")).toEqual([
+      { w: 56, m: 1 }, { w: 56, m: 1 }, { w: 56, m: 1 },
+    ]);
     expect(widths("easy")).toEqual([
       { w: 40, m: 1 }, { w: 40, m: 1 }, { w: 40, m: 1 },
     ]);

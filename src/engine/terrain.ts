@@ -12,6 +12,11 @@ const LAYOUT_GAP = 32;
 
 /** 難易度別パッド構成(SPEC §4): [幅 m, 倍率] */
 const PAD_SPECS: Record<Difficulty, [number, number][]> = {
+  beginner: [
+    [56, 1],
+    [56, 1],
+    [56, 1],
+  ],
   easy: [
     [40, 1],
     [40, 1],
