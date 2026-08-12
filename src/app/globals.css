@@ -11,8 +11,90 @@
 body {
   background: var(--sky);
   color: var(--line);
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-family: var(--font-plex), ui-monospace, monospace;
   min-height: 100dvh;
   display: grid;
   place-items: center;
+}
+
+/* ---- 画面オーバーレイ(タイトル / リザルト) ---- */
+
+.screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 署名要素: 満月の円弧を一本の細線で描く(IMPLEMENTATION_GUIDE §3) */
+.moon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: min(62%, 380px);
+  aspect-ratio: 1;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.kaguya {
+  font-family: var(--font-mincho), serif;
+  font-weight: 400;
+  font-size: clamp(56px, 12vw, 96px);
+  letter-spacing: 0.18em;
+  text-indent: 0.18em;
+  line-height: 1.2;
+}
+
+.screen-sub {
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+  color: var(--line-dim);
+  font-size: 13px;
+}
+
+.screen-controls {
+  color: var(--line-dim);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+
+.screen-verdict {
+  font-family: var(--font-mincho), serif;
+  font-weight: 400;
+  font-size: clamp(36px, 8vw, 64px);
+  letter-spacing: 0.24em;
+  text-indent: 0.24em;
+}
+
+.screen-verdict.crashed { color: var(--danger); }
+
+.screen-score {
+  color: var(--accent);
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  font-variant-numeric: tabular-nums;
+}
+
+.press {
+  margin-top: 18px;
+  font-size: 12px;
+  letter-spacing: 0.35em;
+  text-indent: 0.35em;
+  animation: blink 1.6s steps(2, jump-none) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.15; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .press { animation: none; }
 }

@@ -20,7 +20,11 @@ interface GameLoopOptions {
   /** 毎ステップ呼ばれる入力取得。省略時は無入力(Loop 5 で接続) */
   getInput?: () => ControlInput;
   /** status が flying 以外へ遷移した瞬間に一度だけ呼ばれる */
-  onSettled?: (status: LanderStatus, state: LanderState) => void;
+  onSettled?: (
+    status: LanderStatus,
+    state: LanderState,
+    padMultiplier?: number,
+  ) => void;
   /** 変更するとループとゲーム状態がリセットされる */
   resetKey?: unknown;
 }
@@ -69,7 +73,7 @@ export function useGameLoop({
           const result = judge(state, terrain);
           if (result.status !== "flying") {
             state = { ...state, status: result.status };
-            onSettledRef.current?.(result.status, state);
+            onSettledRef.current?.(result.status, state, result.padMultiplier);
           }
         }
         acc -= DT;
