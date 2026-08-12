@@ -8,3 +8,5 @@
 {"v": "1.2", "ts": "2026-08-12T12:23:21+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass", "notes": "lint クリーン"}}
 {"v": "1.2", "ts": "2026-08-12T12:23:21+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
 {"v": "1.2", "ts": "2026-08-12T12:23:22+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "commit", "data": {"sha": "9a0b9c5", "kind": "feat"}}
+{"v": "1.2", "ts": "2026-08-12T12:26:02+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "stage_end", "data": {"stage": 7, "stage_name": "Ship", "result": "pass", "notes": "PR #9 CI 緑・マージ。本番で beginner=150 / normal=100 を確認"}}
+{"v": "1.2", "ts": "2026-08-12T12:26:03+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "REQ-008 完了。beginner の初期燃料を 150 にし本番反映確認"}}
