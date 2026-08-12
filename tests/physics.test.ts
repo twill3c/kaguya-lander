@@ -72,3 +72,13 @@ describe("Loop 1: physics.step", () => {
     expect(s.vy).toBeCloseTo(GRAVITY, 1);
   });
 });
+
+describe("Loop 9: initialState 難易度別初期燃料", () => {
+  it("T9-1 beginner は fuel=150、省略/他難易度は fuel=100", () => {
+    expect(initialState("beginner").fuel).toBe(150);
+    expect(initialState().fuel).toBe(100);
+    expect(initialState("easy").fuel).toBe(100);
+    expect(initialState("normal").fuel).toBe(100);
+    expect(initialState("hard").fuel).toBe(100);
+  });
+});

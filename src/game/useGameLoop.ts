@@ -5,6 +5,7 @@ import { judge } from "../engine/judge";
 import { step } from "../engine/physics";
 import type {
   ControlInput,
+  Difficulty,
   LanderState,
   LanderStatus,
   Terrain,
@@ -17,6 +18,8 @@ const IDLE: ControlInput = { thrust: false, rotate: 0 };
 interface GameLoopOptions {
   canvasRef: React.RefObject<HTMLCanvasElement | null>;
   terrain: Terrain;
+  /** 初期燃料の決定に使う(SPEC §1。省略時 normal) */
+  difficulty?: Difficulty;
   /** 毎ステップ呼ばれる入力取得。省略時は無入力(Loop 5 で接続) */
   getInput?: () => ControlInput;
   /** status が flying 以外へ遷移した瞬間に一度だけ呼ばれる */
@@ -38,6 +41,7 @@ interface GameLoopOptions {
 export function useGameLoop({
   canvasRef,
   terrain,
+  difficulty = "normal",
   getInput,
   onSettled,
   onFrame,
@@ -61,7 +65,7 @@ export function useGameLoop({
     canvas.width = VIEW_W * dpr;
     canvas.height = VIEW_H * dpr;
 
-    let state = initialState();
+    let state = initialState(difficulty);
     let acc = 0;
     let prev = performance.now();
     let rafId = 0;
@@ -92,5 +96,5 @@ export function useGameLoop({
 
     rafId = requestAnimationFrame(frame);
     return () => cancelAnimationFrame(rafId);
-  }, [canvasRef, terrain, resetKey]);
+  }, [canvasRef, terrain, difficulty, resetKey]);
 }

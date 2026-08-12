@@ -1,0 +1,10 @@
+{"v": "1.2", "ts": "2026-08-12T12:20:46+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "loop_start", "data": {"goal": "REQ-008 beginner の初期燃料を 150(1.5 倍)にする", "spec_refs": ["REQ-008"], "scaffold_version": "unversioned", "agent": "claude-code", "model": "claude-fable-5"}}
+{"v": "1.2", "ts": "2026-08-12T12:20:46+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "stage_end", "data": {"stage": 1, "stage_name": "Read", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T12:20:46+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "stage_end", "data": {"stage": 2, "stage_name": "Plan", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T12:21:29+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "test_run", "data": {"command": "npm test", "passed": 19, "failed": 1}}
+{"v": "1.2", "ts": "2026-08-12T12:21:29+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "stage_end", "data": {"stage": 3, "stage_name": "Red", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T12:23:20+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "test_run", "data": {"command": "npm test", "passed": 20, "failed": 0}}
+{"v": "1.2", "ts": "2026-08-12T12:23:21+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "stage_end", "data": {"stage": 4, "stage_name": "Green", "result": "pass", "notes": "Red 1 回で緑化。headless で HUD 初期燃料 beginner=150 / normal=100 を確認"}}
+{"v": "1.2", "ts": "2026-08-12T12:23:21+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "stage_end", "data": {"stage": 5, "stage_name": "Refactor", "result": "pass", "notes": "lint クリーン"}}
+{"v": "1.2", "ts": "2026-08-12T12:23:21+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "stage_end", "data": {"stage": 6, "stage_name": "Record", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-12T12:23:22+09:00", "project": "kaguya-lander", "loop_id": "loop_009", "event": "commit", "data": {"sha": "9a0b9c5", "kind": "feat"}}
