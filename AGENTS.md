@@ -45,6 +45,7 @@ kaguya-lander/
 | 6 | REQ-006 | HUD・難易度 3 段階・仕上げ・本番デプロイ確認 | 全体 |
 | 7 | REQ-007 | 超エントリー難易度(beginner)追加 — 4 段階化 | `engine/terrain.ts`, `app/` |
 | 9 | REQ-008 | beginner の初期燃料 150(1.5 倍) | `engine/types.ts`, `game/` |
+| 10 | REQ-009 | MIT ライセンス化(LICENSE・画面表示・リポジトリ公開) | 全体 |
 
 ## §3 7 段階ループプロトコル
 

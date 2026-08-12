@@ -136,6 +136,26 @@ body {
   user-select: none;
 }
 
+/* ライセンス表記(SPEC §7、REQ-009) */
+.license {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--line-dim);
+}
+
+.license a {
+  color: var(--line-dim);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  pointer-events: auto;
+}
+
+.license a:hover { color: var(--line); }
+
 /* タイトルの難易度選択 */
 .difficulty span {
   margin: 0 10px;
