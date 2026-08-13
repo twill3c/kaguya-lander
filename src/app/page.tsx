@@ -259,6 +259,13 @@ export default function Home() {
           </button>
         </div>
       )}
+
+      {/* ページフッター(App Menu へのリンク) */}
+      <footer className="page-footer">
+        <a href="https://app-menu-amber.vercel.app" target="_blank" rel="noopener">
+          App Menu
+        </a>
+      </footer>
     </main>
   );
 }

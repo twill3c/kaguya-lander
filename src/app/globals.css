@@ -205,6 +205,23 @@ body {
 
 .license a:hover { color: var(--line); }
 
+/* ---- ページフッター(App Menu リンク) ---- */
+.page-footer {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--line-dim);
+}
+
+.page-footer a {
+  color: var(--line-dim);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.page-footer a:hover { color: var(--line); }
+
 /* タイトルの難易度選択 */
 .difficulty span {
   margin: 0 10px;
