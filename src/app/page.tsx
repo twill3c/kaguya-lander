@@ -260,8 +260,24 @@ export default function Home() {
         </div>
       )}
 
-      {/* ページフッター(App Menu へのリンク) */}
+      {/* ページフッター(解説アーティファクト・App Menu へのリンク) */}
       <footer className="page-footer">
+        <a
+          href="https://claude.ai/code/artifact/2da15975-d284-4b27-b683-20eb42a81a6b"
+          target="_blank"
+          rel="noopener"
+        >
+          かぐやランダーの降ろし方
+        </a>
+        {" ・ "}
+        <a
+          href="https://claude.ai/code/artifact/365b98a1-49d2-4550-9db2-8ebb85203f2e"
+          target="_blank"
+          rel="noopener"
+        >
+          かぐやランダー設計図
+        </a>
+        {" ・ "}
         <a href="https://app-menu-amber.vercel.app" target="_blank" rel="noopener">
           App Menu
         </a>
