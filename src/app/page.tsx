@@ -192,6 +192,8 @@ export default function Home() {
             ↑ / SPACE — 推力 ← → — 回転
             <br />
             タッチ: 画面下のボタン ◀ 左回転 / ▲ 推力 / ▶ 右回転
+            <br />
+            📱 スマホ対応(タッチ操作)
           </p>
           <p className="screen-controls difficulty">
             {DIFFICULTIES.map((d, i) => (
