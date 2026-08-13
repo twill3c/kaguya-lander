@@ -14,3 +14,4 @@
 | loop-09 | REQ-008 | 2026-08-12 | 1 | beginner の初期燃料 150(1.5 倍)。SPEC §1/§2 先行改訂 → T9-1 Red → initialState(difficulty) 化 |
 | loop-10 | REQ-009 | 2026-08-12 | — | MIT ライセンス化。LICENSE・package.json・タイトルフッタ表示・README 追記。リポジトリを public 化 |
 | loop-11 | REQ-010 | 2026-08-12 | — | 可視タッチ操作バー(Pointer Events・マルチタッチ)を pointer:coarse で表示。overscroll 防止。iPhone エミュレーションで操作確認 |
+| loop-12 | REQ-009 | 2026-08-14 | — | ライセンス表記をフリート統一書式「MIT License © 2026 坂田哲朗 ・ GitHub」に変更。SPEC 先行改訂 |
