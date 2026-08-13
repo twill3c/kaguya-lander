@@ -209,7 +209,15 @@ export default function Home() {
           </p>
           <p className="press">PRESS ENTER / TAP</p>
           <p className="license">
-            MIT License © 2026 坂田哲朗 ・{" "}
+            <a
+              href="https://github.com/twill3c/kaguya-lander/blob/main/LICENSE"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              MIT License
+            </a>{" "}
+            © 2026 坂田哲朗 ・{" "}
             <a
               href="https://github.com/twill3c/kaguya-lander"
               target="_blank"
