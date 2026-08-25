@@ -265,6 +265,18 @@ export default function Home() {
       {/* ページフッター(解説アーティファクト・App Menu へのリンク) */}
       <footer className="page-footer">
         <a
+          href="https://github.com/twill3c/kaguya-lander/blob/main/LICENSE"
+          target="_blank"
+          rel="noopener"
+        >
+          MIT License
+        </a>
+        {" © 2026 坂田哲朗 ・ "}
+        <a href="https://github.com/twill3c/kaguya-lander" target="_blank" rel="noopener">
+          GitHub
+        </a>
+        {" ・ "}
+        <a
           href="https://claude.ai/code/artifact/2da15975-d284-4b27-b683-20eb42a81a6b"
           target="_blank"
           rel="noopener"
